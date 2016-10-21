@@ -12,7 +12,7 @@ import UIKit
 fileprivate let numberOfRows: CGFloat = 3
 fileprivate let numberOfColumns: CGFloat = 3
 
-class BoardView: UIView {
+final class BoardView: UIView {
     
     // MARK: - Initializers
     convenience init(boardWidth: CGFloat, boardHeight: CGFloat) {
@@ -42,6 +42,8 @@ class BoardView: UIView {
             field.layer.borderWidth = 1.0
             
             // Add gesture Recognizer
+            let tap = UITapGestureRecognizer(target: self, action: #selector(handleTap(_:)))
+            field.addGestureRecognizer(tap)
             
             addSubview(field)
         }
@@ -49,6 +51,12 @@ class BoardView: UIView {
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    // MARK: - Private Helper Methods
+    @objc private func handleTap(_ tap: UITapGestureRecognizer) {
+        let tappedField = tap.view
+        print(tappedField)
     }
     
 }

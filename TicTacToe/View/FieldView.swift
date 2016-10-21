@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FieldView: UIView {
+final class FieldView: UIView {
 
     let xPosition: Int // range: [0, 1, 2]
     let yPosition: Int // range: [0, 1, 2]

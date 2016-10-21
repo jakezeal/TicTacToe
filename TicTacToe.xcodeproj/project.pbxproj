@@ -15,6 +15,7 @@
 		E288FFF11DBA8DDD00D22189 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E288FFEE1DBA8DDD00D22189 /* Main.storyboard */; };
 		E288FFF51DBA8EC500D22189 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = E288FFF41DBA8EC500D22189 /* Board.swift */; };
 		E288FFF71DBA8F0500D22189 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = E288FFF61DBA8F0500D22189 /* Player.swift */; };
+		E288FFF91DBA8F2E00D22189 /* Field.swift in Sources */ = {isa = PBXBuildFile; fileRef = E288FFF81DBA8F2E00D22189 /* Field.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		E288FFEF1DBA8DDD00D22189 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Supporting Files/Base.lproj/Main.storyboard"; sourceTree = "<group>"; };
 		E288FFF41DBA8EC500D22189 /* Board.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Board.swift; path = Model/Board.swift; sourceTree = "<group>"; };
 		E288FFF61DBA8F0500D22189 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Player.swift; path = Model/Player.swift; sourceTree = "<group>"; };
+		E288FFF81DBA8F2E00D22189 /* Field.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Field.swift; path = Model/Field.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 			children = (
 				E288FFF41DBA8EC500D22189 /* Board.swift */,
 				E288FFF61DBA8F0500D22189 /* Player.swift */,
+				E288FFF81DBA8F2E00D22189 /* Field.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -239,6 +242,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E288FFF91DBA8F2E00D22189 /* Field.swift in Sources */,
 				E288FFF71DBA8F0500D22189 /* Player.swift in Sources */,
 				E288FFE91DBA8DBD00D22189 /* GameViewController.swift in Sources */,
 				E288FFC71DBA8D5A00D22189 /* AppDelegate.swift in Sources */,

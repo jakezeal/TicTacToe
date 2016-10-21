@@ -17,6 +17,7 @@
 		E288FFF71DBA8F0500D22189 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = E288FFF61DBA8F0500D22189 /* Player.swift */; };
 		E288FFF91DBA8F2E00D22189 /* Field.swift in Sources */ = {isa = PBXBuildFile; fileRef = E288FFF81DBA8F2E00D22189 /* Field.swift */; };
 		E288FFFB1DBA8F9E00D22189 /* BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E288FFFA1DBA8F9E00D22189 /* BoardView.swift */; };
+		E288FFFD1DBA8FED00D22189 /* FieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E288FFFC1DBA8FED00D22189 /* FieldView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		E288FFF61DBA8F0500D22189 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Player.swift; path = Model/Player.swift; sourceTree = "<group>"; };
 		E288FFF81DBA8F2E00D22189 /* Field.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Field.swift; path = Model/Field.swift; sourceTree = "<group>"; };
 		E288FFFA1DBA8F9E00D22189 /* BoardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BoardView.swift; path = View/BoardView.swift; sourceTree = "<group>"; };
+		E288FFFC1DBA8FED00D22189 /* FieldView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FieldView.swift; path = View/FieldView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				E288FFFA1DBA8F9E00D22189 /* BoardView.swift */,
+				E288FFFC1DBA8FED00D22189 /* FieldView.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -251,6 +254,7 @@
 				E288FFFB1DBA8F9E00D22189 /* BoardView.swift in Sources */,
 				E288FFC71DBA8D5A00D22189 /* AppDelegate.swift in Sources */,
 				E288FFF51DBA8EC500D22189 /* Board.swift in Sources */,
+				E288FFFD1DBA8FED00D22189 /* FieldView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

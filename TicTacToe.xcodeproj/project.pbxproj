@@ -78,11 +78,8 @@
 			isa = PBXGroup;
 			children = (
 				E288FFC61DBA8D5A00D22189 /* AppDelegate.swift */,
-				E288FFC81DBA8D5A00D22189 /* ViewController.swift */,
-				E288FFCA1DBA8D5A00D22189 /* Main.storyboard */,
-				E288FFCD1DBA8D5A00D22189 /* Assets.xcassets */,
-				E288FFCF1DBA8D5A00D22189 /* LaunchScreen.storyboard */,
-				E288FFD21DBA8D5A00D22189 /* Info.plist */,
+				E288FFE61DBA8D6100D22189 /* Game View Controller */,
+				E288FFE71DBA8D8000D22189 /* Supporting Files */,
 			);
 			path = TicTacToe;
 			sourceTree = "<group>";
@@ -94,6 +91,25 @@
 				E288FFDD1DBA8D5B00D22189 /* Info.plist */,
 			);
 			path = TicTacToeTests;
+			sourceTree = "<group>";
+		};
+		E288FFE61DBA8D6100D22189 /* Game View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E288FFC81DBA8D5A00D22189 /* ViewController.swift */,
+			);
+			name = "Game View Controller";
+			sourceTree = "<group>";
+		};
+		E288FFE71DBA8D8000D22189 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E288FFCA1DBA8D5A00D22189 /* Main.storyboard */,
+				E288FFCD1DBA8D5A00D22189 /* Assets.xcassets */,
+				E288FFCF1DBA8D5A00D22189 /* LaunchScreen.storyboard */,
+				E288FFD21DBA8D5A00D22189 /* Info.plist */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

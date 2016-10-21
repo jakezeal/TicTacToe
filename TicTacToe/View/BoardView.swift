@@ -26,6 +26,25 @@ class BoardView: UIView {
         super.init(frame: boardFrame)
         
         // Add fields
+        let numberOfFields = Int(numberOfRows * numberOfColumns)
+        
+        for i in 0..<numberOfFields {
+            
+            let xPosition = i % Int(numberOfColumns)
+            let x = CGFloat(xPosition) * fieldWidth
+            
+            let yPosition = i / Int(numberOfRows)
+            let y = CGFloat(yPosition) * fieldHeight
+            
+            let currentFieldFrame = CGRect(x: x, y: y, width: fieldWidth, height: fieldHeight)
+            
+            let field = FieldView(frame: currentFieldFrame, xPosition: xPosition, yPosition: yPosition)
+            field.layer.borderWidth = 1.0
+            
+            // Add gesture Recognizer
+            
+            addSubview(field)
+        }
     }
     
     required init?(coder aDecoder: NSCoder) {

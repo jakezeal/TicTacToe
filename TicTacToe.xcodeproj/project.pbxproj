@@ -13,6 +13,7 @@
 		E288FFEB1DBA8DD500D22189 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E288FFEA1DBA8DD500D22189 /* Assets.xcassets */; };
 		E288FFF01DBA8DDD00D22189 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E288FFEC1DBA8DDD00D22189 /* LaunchScreen.storyboard */; };
 		E288FFF11DBA8DDD00D22189 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E288FFEE1DBA8DDD00D22189 /* Main.storyboard */; };
+		E288FFF51DBA8EC500D22189 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = E288FFF41DBA8EC500D22189 /* Board.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		E288FFEA1DBA8DD500D22189 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "Supporting Files/Assets.xcassets"; sourceTree = "<group>"; };
 		E288FFED1DBA8DDD00D22189 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Supporting Files/Base.lproj/LaunchScreen.storyboard"; sourceTree = "<group>"; };
 		E288FFEF1DBA8DDD00D22189 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Supporting Files/Base.lproj/Main.storyboard"; sourceTree = "<group>"; };
+		E288FFF41DBA8EC500D22189 /* Board.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Board.swift; path = Model/Board.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,8 @@
 			children = (
 				E288FFC61DBA8D5A00D22189 /* AppDelegate.swift */,
 				E288FFE61DBA8D6100D22189 /* Game View Controller */,
+				E288FFF21DBA8E3600D22189 /* Model */,
+				E288FFF31DBA8E3F00D22189 /* View */,
 				E288FFE71DBA8D8000D22189 /* Supporting Files */,
 			);
 			path = TicTacToe;
@@ -110,6 +114,21 @@
 				E288FFD21DBA8D5A00D22189 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E288FFF21DBA8E3600D22189 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E288FFF41DBA8EC500D22189 /* Board.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		E288FFF31DBA8E3F00D22189 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,6 +238,7 @@
 			files = (
 				E288FFE91DBA8DBD00D22189 /* GameViewController.swift in Sources */,
 				E288FFC71DBA8D5A00D22189 /* AppDelegate.swift in Sources */,
+				E288FFF51DBA8EC500D22189 /* Board.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

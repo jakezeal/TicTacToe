@@ -8,11 +8,19 @@
 
 import UIKit
 
+// MARK: - Protocols
+protocol BoardViewDelegate {
+    func handleTap(fieldView: FieldView)
+}
+
 // MARK: - Private Properties
 fileprivate let numberOfRows: CGFloat = 3
 fileprivate let numberOfColumns: CGFloat = 3
 
 final class BoardView: UIView {
+    
+    // MARK: - Properties
+    var delegate: BoardViewDelegate?
     
     // MARK: - Initializers
     convenience init(boardWidth: CGFloat, boardHeight: CGFloat) {
@@ -55,10 +63,14 @@ final class BoardView: UIView {
     
     // MARK: - Private Helper Methods
     @objc private func handleTap(_ tap: UITapGestureRecognizer) {
-        let tappedField = tap.view
-        print(tappedField)
-        let b = Board()
-        b.winner()
+        // TODO: Future take backs if it is player's turn and other player accepts
+        // TODO: Check if player tapped on already tapped square
+        if let tappedField = tap.view as? FieldView {
+            delegate?.handleTap(fieldView: tappedField)
+            print(tappedField)
+        }
+        
+        
     }
     
 }

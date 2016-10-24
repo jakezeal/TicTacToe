@@ -33,13 +33,37 @@ struct Board {
         guard fields[x][y] == .free else { return }
         
         fields[x][y] = .hasPlayer(player)
-        
     }
     
     func winner() -> Player? {
         // Check rows, columns and diagonals
-        return nil
+        if let winner = checkRowsForWinner() {
+            return winner
+        } else if let winner = checkColumnsForWinner() {
+            return winner
+        } else if let winner = checkDiagonalsForWinner() {
+            return winner
+        } else {
+            return nil
+        }
     }
     
     
+}
+
+private extension Board {
+    // Check rows for winner
+    func checkRowsForWinner() -> Player? {
+       return nil
+    }
+    
+    // Check columns for winner
+    func checkColumnsForWinner() -> Player? {
+       return nil
+    }
+    
+    // Check diagonals for winner
+    func checkDiagonalsForWinner() -> Player? {
+        return nil
+    }
 }

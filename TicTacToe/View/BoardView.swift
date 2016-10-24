@@ -57,8 +57,7 @@ final class BoardView: UIView {
     @objc private func handleTap(_ tap: UITapGestureRecognizer) {
         let tappedField = tap.view
         print(tappedField)
-        let board = Board()
-        board.move(player: .circle, x: 1, y: 2)
+        
     }
     
 }

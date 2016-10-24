@@ -6,9 +6,7 @@
 //  Copyright © 2016 Jake. All rights reserved.
 //
 
-import Foundation
-
-enum Player {
-    case circle
-    case cross
+enum Player: String {
+    case circle = "O"
+    case cross = "X"
 }

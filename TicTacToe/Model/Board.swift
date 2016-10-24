@@ -8,7 +8,7 @@
 
 struct Board {
     // MARK: - Properties
-    private var currentTurn: Player = .cross
+    fileprivate var currentTurn: Player = .cross
     var fields: [[Field]] = [[.free, .free, .free], [.free, .free, .free], [.free, .free, .free]]
     
     // MARK: - Public Functions
@@ -43,6 +43,9 @@ struct Board {
             return winner
         } else if let winner = checkDiagonalsForWinner() {
             return winner
+        } else if checkForDraw() {
+            // TODO: Indicate on UI that there was a draw (not directly from this class)
+            return nil
         } else {
             return nil
         }
@@ -54,16 +57,84 @@ struct Board {
 private extension Board {
     // Check rows for winner
     func checkRowsForWinner() -> Player? {
-       return nil
+        
+        for row in 0..<3 {
+            if let winner = checkWinner(in: fields[row]) {
+                return winner
+            }
+        }
+        
+        return nil
     }
     
     // Check columns for winner
     func checkColumnsForWinner() -> Player? {
-       return nil
+        
+        let firstRow = fields[0]
+        
+        if let winner = checkWinner(in: firstRow) {
+            return winner
+        }
+        
+        return nil
     }
     
     // Check diagonals for winner
     func checkDiagonalsForWinner() -> Player? {
-        return nil
+        
+        guard fields[1][1] == .hasPlayer(.circle) || fields[1][1] == .hasPlayer(.cross) else { return nil }
+        
+        let firstDiagonal = [fields[0][0],  fields[1][1],  fields[2][2]]
+        let secondDiagonal = [fields[0][2],  fields[1][1],  fields[2][0]]
+        
+        if let winner = checkWinner(in: firstDiagonal) {
+            return winner
+        } else if let winner = checkWinner(in: secondDiagonal) {
+            return winner
+        } else {
+            return nil
+        }
+    }
+    
+    func checkWinner(in fields: [Field]) -> Player? {
+        if let circleWinner = checkWinnerForCircle(in: fields) {
+            return circleWinner
+        } else if let crossWinner = checkWinnerForCross(in: fields) {
+            return crossWinner
+        } else {
+            return nil
+        }
+    }
+    
+    func checkWinnerForCircle(in fields: [Field]) -> Player? {
+        if fields[0] == .hasPlayer(.circle) && fields[1] == .hasPlayer(.circle) && fields[2] == .hasPlayer(.circle) {
+            return Player(rawValue: "O")
+        } else {
+            return nil
+        }
+    }
+    
+    func checkWinnerForCross(in fields: [Field]) -> Player? {
+        if fields[0] == .hasPlayer(.cross) && fields[1] == .hasPlayer(.cross) && fields[2] == .hasPlayer(.cross) {
+            return Player(rawValue: "X")
+        } else {
+            return nil
+        }
+    }
+    
+    func checkForDraw() -> Bool {
+        var draw = false
+        
+        for x in 0..<3 {
+            for y in 0..<3 {
+                if fields[x][y] == .free {
+                    draw = false
+                    break
+                }
+                draw = true
+            }
+        }
+        print("Check for Draw: \(draw)")
+        return draw
     }
 }

@@ -57,7 +57,8 @@ final class BoardView: UIView {
     @objc private func handleTap(_ tap: UITapGestureRecognizer) {
         let tappedField = tap.view
         print(tappedField)
-        
+        let b = Board()
+        b.winner()
     }
     
 }

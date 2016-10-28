@@ -13,6 +13,8 @@ final class FieldView: UIView {
     let xPosition: Int // range: [0, 1, 2]
     let yPosition: Int // range: [0, 1, 2]
     
+    var label: UILabel?
+    
     init(frame: CGRect, xPosition: Int, yPosition: Int) {
         
         assert(xPosition >= 0 && xPosition <= 2, "value '\(xPosition)' is not allowed for x position of field")

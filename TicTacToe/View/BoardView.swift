@@ -61,16 +61,23 @@ final class BoardView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
+    // MARK: - Public API
+    func addLabel(in fieldView: FieldView) {
+        fieldView.label = UILabel(frame: fieldView.frame)
+        fieldView.label!.text = "X"
+        
+        fieldView.label!.font = UIFont.systemFont(ofSize: 32.0)
+        fieldView.label!.textColor = .black
+        fieldView.label!.textAlignment = .center
+        fieldView.addSubview(fieldView.label!)
+    }
+    
     // MARK: - Private Helper Methods
     @objc private func handleTap(_ tap: UITapGestureRecognizer) {
-        // TODO: Future take backs if it is player's turn and other player accepts
-        // TODO: Check if player tapped on already tapped square
         if let tappedField = tap.view as? FieldView {
             delegate?.handleTap(fieldView: tappedField)
             print(tappedField)
         }
-        
-        
     }
-    
+
 }

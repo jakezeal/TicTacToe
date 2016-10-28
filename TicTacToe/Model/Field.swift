@@ -24,5 +24,5 @@ func ==(lhs: Field, rhs: Field) -> Bool {
     default:
         return false
     }
-
+    
 }

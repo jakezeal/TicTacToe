@@ -6,6 +6,8 @@
 //  Copyright © 2016 Jake. All rights reserved.
 //
 
+// TODO: Future take backs if it is player's turn and other player accepts
+
 struct Board {
     // MARK: - Properties
     fileprivate var currentTurn: Player = .cross
@@ -27,12 +29,13 @@ struct Board {
         }
     }
     
-    mutating func move(player: Player, x: Int, y: Int) {
+    mutating func move(x: Int, y: Int) {
         guard x < 3 && y < 3 else { return }
         // TODO: Animation to indicate to player
         guard fields[x][y] == .free else { return }
         
-        fields[x][y] = .hasPlayer(player)
+        fields[x][y] = .hasPlayer(currentTurn)
+        
     }
     
     func winner() -> Player? {

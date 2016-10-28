@@ -21,8 +21,6 @@ class GameViewController: UIViewController, BoardViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         prepareBoardView()
-        
-        
     }
     
     // MARK: - Preparations
@@ -39,6 +37,7 @@ class GameViewController: UIViewController, BoardViewDelegate {
         print("Field View - xPosition: \(fieldView.xPosition)")
         print("Field View - yPosition: \(fieldView.yPosition)")
         board.move(x: fieldView.xPosition, y: fieldView.yPosition)
+        currentPlayerTurnLabel.text = board.playerWithCurrentTurn().rawValue
         boardView.addLabel(in: fieldView)
     }
 }

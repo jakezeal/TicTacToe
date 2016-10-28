@@ -82,4 +82,4 @@ fastlane/Preview.html
 fastlane/screenshots
 fastlane/test_output
 
-GoogleService-Info.plist
+TicTacToe/GoogleService-Info.plist

@@ -20,6 +20,7 @@
 		E288FFF91DBA8F2E00D22189 /* Field.swift in Sources */ = {isa = PBXBuildFile; fileRef = E288FFF81DBA8F2E00D22189 /* Field.swift */; };
 		E288FFFB1DBA8F9E00D22189 /* BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E288FFFA1DBA8F9E00D22189 /* BoardView.swift */; };
 		E288FFFD1DBA8FED00D22189 /* FieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E288FFFC1DBA8FED00D22189 /* FieldView.swift */; };
+		E29A95DD1DC41359009671B3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E29A95DC1DC41359009671B3 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		E288FFF81DBA8F2E00D22189 /* Field.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Field.swift; path = Model/Field.swift; sourceTree = "<group>"; };
 		E288FFFA1DBA8F9E00D22189 /* BoardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BoardView.swift; path = View/BoardView.swift; sourceTree = "<group>"; };
 		E288FFFC1DBA8FED00D22189 /* FieldView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FieldView.swift; path = View/FieldView.swift; sourceTree = "<group>"; };
+		E29A95DC1DC41359009671B3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E421B8EB535F461FDCC93776 /* Pods_TicTacToeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TicTacToeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -151,6 +153,7 @@
 				E288FFEC1DBA8DDD00D22189 /* LaunchScreen.storyboard */,
 				E288FFEE1DBA8DDD00D22189 /* Main.storyboard */,
 				E288FFEA1DBA8DD500D22189 /* Assets.xcassets */,
+				E29A95DC1DC41359009671B3 /* GoogleService-Info.plist */,
 				E288FFD21DBA8D5A00D22189 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -267,6 +270,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E288FFF11DBA8DDD00D22189 /* Main.storyboard in Resources */,
+				E29A95DD1DC41359009671B3 /* GoogleService-Info.plist in Resources */,
 				E288FFEB1DBA8DD500D22189 /* Assets.xcassets in Resources */,
 				E288FFF01DBA8DDD00D22189 /* LaunchScreen.storyboard in Resources */,
 			);

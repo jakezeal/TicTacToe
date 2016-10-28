@@ -7,6 +7,8 @@ target 'TicTacToe' do
 
   # Pods for TicTacToe
 
+	pod 'Firebase/Core'
+
   target 'TicTacToeTests' do
     inherit! :search_paths
     # Pods for testing

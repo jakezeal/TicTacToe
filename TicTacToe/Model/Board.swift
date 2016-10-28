@@ -10,7 +10,7 @@
 
 struct Board {
     // MARK: - Properties
-    fileprivate var currentTurn: Player = .cross
+    private(set) var currentTurn: Player = .cross
     var fields: [[Field]] = [[.free, .free, .free], [.free, .free, .free], [.free, .free, .free]]
     
     // MARK: - Public Functions
@@ -18,14 +18,12 @@ struct Board {
     // Make move
     // Determine and return winner
     
-    mutating func playerWithCurrentTurn() -> Player {
+    private mutating func changePlayerWithCurrentTurn(){
         switch currentTurn {
         case .cross:
             currentTurn = .circle
-            return .circle
         case .circle:
             currentTurn = .cross
-            return .cross
         }
     }
     
@@ -34,6 +32,8 @@ struct Board {
         guard fields[x][y] == .free else { return }
         
         fields[x][y] = .hasPlayer(currentTurn)
+        
+        changePlayerWithCurrentTurn()
         
     }
     

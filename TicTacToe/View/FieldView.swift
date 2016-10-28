@@ -13,7 +13,7 @@ final class FieldView: UIView {
     let xPosition: Int // range: [0, 1, 2]
     let yPosition: Int // range: [0, 1, 2]
     
-    var label: UILabel?
+    let label: UILabel
     
     init(frame: CGRect, xPosition: Int, yPosition: Int) {
         
@@ -22,6 +22,8 @@ final class FieldView: UIView {
         
         self.xPosition = xPosition
         self.yPosition = yPosition
+        
+        label = UILabel(frame: frame)
         
         super.init(frame: frame)
     }

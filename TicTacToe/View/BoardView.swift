@@ -19,6 +19,11 @@ fileprivate let numberOfColumns: CGFloat = 3
 
 final class BoardView: UIView {
     
+    enum Player: String {
+        case cross = "X"
+        case circle = "O"
+    }
+    
     // MARK: - Properties
     var delegate: BoardViewDelegate?
     
@@ -62,15 +67,11 @@ final class BoardView: UIView {
     }
     
     // MARK: - Public API
-    func addLabel(in fieldView: FieldView) {
-        
-        fieldView.label = UILabel(frame: fieldView.frame)
-        fieldView.label!.text = "X"
-        
-        fieldView.label!.font = UIFont.systemFont(ofSize: 32.0)
-        fieldView.label!.textColor = .black
-        fieldView.label!.textAlignment = .center
-        fieldView.addSubview(fieldView.label!)
+    func addLabel(playerName: Player, in fieldView: FieldView) {
+        fieldView.label.text = playerName.rawValue
+        fieldView.label.font = UIFont.systemFont(ofSize: 56.0)
+        fieldView.label.textColor = .black
+        addSubview(fieldView.label)
     }
     
     // MARK: - Private Helper Methods

@@ -34,8 +34,12 @@ class GameViewController: UIViewController, BoardViewDelegate {
     
     // MARK: - Board View Delegate
     func handleTap(fieldView: FieldView) {
+        // TODO: Animation to indicate to player must pick new field
+        guard fieldView.label == nil else { return }
+        
         print("Field View - xPosition: \(fieldView.xPosition)")
         print("Field View - yPosition: \(fieldView.yPosition)")
+        
         board.move(x: fieldView.xPosition, y: fieldView.yPosition)
         currentPlayerTurnLabel.text = board.playerWithCurrentTurn().rawValue
         boardView.addLabel(in: fieldView)

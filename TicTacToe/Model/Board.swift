@@ -31,7 +31,6 @@ struct Board {
     
     mutating func move(x: Int, y: Int) {
         guard x < 3 && y < 3 else { return }
-        // TODO: Animation to indicate to player
         guard fields[x][y] == .free else { return }
         
         fields[x][y] = .hasPlayer(currentTurn)

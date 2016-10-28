@@ -63,6 +63,7 @@ final class BoardView: UIView {
     
     // MARK: - Public API
     func addLabel(in fieldView: FieldView) {
+        
         fieldView.label = UILabel(frame: fieldView.frame)
         fieldView.label!.text = "X"
         

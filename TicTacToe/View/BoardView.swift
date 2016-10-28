@@ -66,7 +66,7 @@ final class BoardView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    // MARK: - Public API
+    // MARK: - Public Functions
     func addLabel(playerName: Player, in fieldView: FieldView) {
         fieldView.label.text = playerName.rawValue
         fieldView.label.font = UIFont.systemFont(ofSize: 56.0)

@@ -14,6 +14,9 @@ class GameViewController: UIViewController, BoardViewDelegate {
     var board = Board()
     weak var boardView: BoardView! = nil
     
+    // MARK: - IBOutlets
+    @IBOutlet weak var currentPlayerTurnLabel: UILabel!
+    
     // MARK: - View Lifecycles
     override func viewDidLoad() {
         super.viewDidLoad()

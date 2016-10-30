@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Archive View Controller-->
         <scene sceneID="dmh-Wp-ddB">
             <objects>
-                <viewController id="YdE-Eu-uwa" sceneMemberID="viewController">
+                <viewController id="YdE-Eu-uwa" customClass="ArchiveViewController" customModule="TicTacToe" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="eKw-dy-D48"/>
                         <viewControllerLayoutGuide type="bottom" id="HCp-5n-Fd4"/>
@@ -21,12 +21,38 @@
                     <view key="view" contentMode="scaleToFill" id="ACF-hc-hdT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1Y8-iO-Vki">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="IsU-RC-w6t">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="IsU-RC-w6t" id="kPC-Su-kpv">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="YdE-Eu-uwa" id="Vzo-h7-vwf"/>
+                                    <outlet property="delegate" destination="YdE-Eu-uwa" id="0Hr-OX-eEQ"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="HCp-5n-Fd4" firstAttribute="top" secondItem="1Y8-iO-Vki" secondAttribute="bottom" id="17p-2v-suL"/>
+                            <constraint firstAttribute="trailing" secondItem="1Y8-iO-Vki" secondAttribute="trailing" id="NOh-k2-Ux2"/>
+                            <constraint firstItem="1Y8-iO-Vki" firstAttribute="top" secondItem="eKw-dy-D48" secondAttribute="bottom" id="WLB-7I-CEb"/>
+                            <constraint firstItem="1Y8-iO-Vki" firstAttribute="leading" secondItem="ACF-hc-hdT" secondAttribute="leading" id="hdR-d9-pdW"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yQK-5c-bvi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-425" y="-155"/>
+            <point key="canvasLocation" x="-10" y="630"/>
         </scene>
         <!--Game View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -83,7 +109,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+            <point key="canvasLocation" x="-10" y="-30"/>
         </scene>
     </scenes>
 </document>

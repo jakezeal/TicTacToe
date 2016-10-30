@@ -22,6 +22,7 @@
 		E288FFFD1DBA8FED00D22189 /* FieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E288FFFC1DBA8FED00D22189 /* FieldView.swift */; };
 		E29A95DD1DC41359009671B3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E29A95DC1DC41359009671B3 /* GoogleService-Info.plist */; };
 		E29A95DF1DC5A67E009671B3 /* SignupLogin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E29A95DE1DC5A67E009671B3 /* SignupLogin.storyboard */; };
+		E29A95E21DC5A710009671B3 /* ArchiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29A95E11DC5A710009671B3 /* ArchiveViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		E288FFFC1DBA8FED00D22189 /* FieldView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FieldView.swift; path = View/FieldView.swift; sourceTree = "<group>"; };
 		E29A95DC1DC41359009671B3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E29A95DE1DC5A67E009671B3 /* SignupLogin.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SignupLogin.storyboard; path = Authentication/SignupLogin.storyboard; sourceTree = "<group>"; };
+		E29A95E11DC5A710009671B3 /* ArchiveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ArchiveViewController.swift; path = "Game View Controller/ArchiveViewController.swift"; sourceTree = "<group>"; };
 		E421B8EB535F461FDCC93776 /* Pods_TicTacToeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TicTacToeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -146,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				E288FFE81DBA8DBD00D22189 /* GameViewController.swift */,
+				E29A95E11DC5A710009671B3 /* ArchiveViewController.swift */,
 			);
 			name = "Game View Controller";
 			sourceTree = "<group>";
@@ -402,6 +405,7 @@
 				E288FFC71DBA8D5A00D22189 /* AppDelegate.swift in Sources */,
 				E288FFF51DBA8EC500D22189 /* Board.swift in Sources */,
 				E288FFFD1DBA8FED00D22189 /* FieldView.swift in Sources */,
+				E29A95E21DC5A710009671B3 /* ArchiveViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

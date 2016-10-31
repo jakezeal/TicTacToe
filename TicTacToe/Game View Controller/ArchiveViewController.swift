@@ -23,10 +23,16 @@ class ArchiveViewController: UIViewController {
 
 }
 
+// MARK: - Table View Data Source
 extension ArchiveViewController: UITableViewDataSource {
     
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        // TODO: return number of past games played
+        return 10
+    }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
+        let cell = tableView.dequeueReusableCell(withIdentifier: ArchiveViewControllerConstants.tableViewCell.rawValue, for: indexPath)
+        return cell
     }
 }

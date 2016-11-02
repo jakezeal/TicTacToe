@@ -24,6 +24,10 @@
 		E29A95DD1DC41359009671B3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E29A95DC1DC41359009671B3 /* GoogleService-Info.plist */; };
 		E29A95DF1DC5A67E009671B3 /* SignupLogin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E29A95DE1DC5A67E009671B3 /* SignupLogin.storyboard */; };
 		E29A95E21DC5A710009671B3 /* ArchiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29A95E11DC5A710009671B3 /* ArchiveViewController.swift */; };
+		E2FBF1671DCA759E00FC9183 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2FBF1631DCA759E00FC9183 /* Bolts.framework */; };
+		E2FBF1681DCA759E00FC9183 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2FBF1641DCA759E00FC9183 /* FBSDKCoreKit.framework */; };
+		E2FBF1691DCA759E00FC9183 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2FBF1651DCA759E00FC9183 /* FBSDKLoginKit.framework */; };
+		E2FBF16A1DCA759E00FC9183 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2FBF1661DCA759E00FC9183 /* FBSDKShareKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +65,11 @@
 		E29A95DC1DC41359009671B3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E29A95DE1DC5A67E009671B3 /* SignupLogin.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SignupLogin.storyboard; path = Authentication/SignupLogin.storyboard; sourceTree = "<group>"; };
 		E29A95E11DC5A710009671B3 /* ArchiveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ArchiveViewController.swift; path = "Game View Controller/ArchiveViewController.swift"; sourceTree = "<group>"; };
+		E2ADB4791DCA72F800871903 /* TicTacToe-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TicTacToe-Bridging-Header.h"; sourceTree = "<group>"; };
+		E2FBF1631DCA759E00FC9183 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "../../../../10 Extras/FacebookSDKs-iOS-4.17.0/Bolts.framework"; sourceTree = "<group>"; };
+		E2FBF1641DCA759E00FC9183 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = "../../../../10 Extras/FacebookSDKs-iOS-4.17.0/FBSDKCoreKit.framework"; sourceTree = "<group>"; };
+		E2FBF1651DCA759E00FC9183 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = "../../../../10 Extras/FacebookSDKs-iOS-4.17.0/FBSDKLoginKit.framework"; sourceTree = "<group>"; };
+		E2FBF1661DCA759E00FC9183 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = "../../../../10 Extras/FacebookSDKs-iOS-4.17.0/FBSDKShareKit.framework"; sourceTree = "<group>"; };
 		E421B8EB535F461FDCC93776 /* Pods_TicTacToeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TicTacToeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -70,6 +79,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				55A23FC80A0943DC39404FC5 /* Pods_TicTacToe.framework in Frameworks */,
+				E2FBF1681DCA759E00FC9183 /* FBSDKCoreKit.framework in Frameworks */,
+				E2FBF16A1DCA759E00FC9183 /* FBSDKShareKit.framework in Frameworks */,
+				E2FBF1691DCA759E00FC9183 /* FBSDKLoginKit.framework in Frameworks */,
+				E2FBF1671DCA759E00FC9183 /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +111,10 @@
 		BB9432AB24705F038D852159 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E2FBF1631DCA759E00FC9183 /* Bolts.framework */,
+				E2FBF1641DCA759E00FC9183 /* FBSDKCoreKit.framework */,
+				E2FBF1651DCA759E00FC9183 /* FBSDKLoginKit.framework */,
+				E2FBF1661DCA759E00FC9183 /* FBSDKShareKit.framework */,
 				690932371CE87440702CC0FC /* Pods_TicTacToe.framework */,
 				E421B8EB535F461FDCC93776 /* Pods_TicTacToeTests.framework */,
 			);
@@ -167,6 +184,7 @@
 		E288FFE71DBA8D8000D22189 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E2ADB4791DCA72F800871903 /* TicTacToe-Bridging-Header.h */,
 				E288FFEC1DBA8DDD00D22189 /* LaunchScreen.storyboard */,
 				E288FFEE1DBA8DDD00D22189 /* Main.storyboard */,
 				E288FFEA1DBA8DD500D22189 /* Assets.xcassets */,
@@ -254,12 +272,13 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = Jake;
 				TargetAttributes = {
 					E288FFC21DBA8D5A00D22189 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = MPF357W934;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 					E288FFD61DBA8D5B00D22189 = {
@@ -477,6 +496,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -526,6 +546,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -555,11 +576,19 @@
 			baseConfigurationReference = 706B434E1FA3ABB0D5CDD01F /* Pods-TicTacToe.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = MPF357W934;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"~/Documents/10\\ Extras/FacebookSDKs-iOS-4.17.0/",
+				);
 				INFOPLIST_FILE = TicTacToe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jakezeal.TicTacToe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TicTacToe/TicTacToe-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -569,11 +598,18 @@
 			baseConfigurationReference = 6012B43F5C4EAD6E8B3185F5 /* Pods-TicTacToe.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = MPF357W934;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"~/Documents/10\\ Extras/FacebookSDKs-iOS-4.17.0/",
+				);
 				INFOPLIST_FILE = TicTacToe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jakezeal.TicTacToe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TicTacToe/TicTacToe-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
